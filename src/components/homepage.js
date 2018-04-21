@@ -1,6 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { fetchSchedule } from '../actions/schedule';
 
-export default class HomePage extends React.Component {
+export class HomePage extends React.Component {
+    componentDidMount() {
+        this.props.dispatch(fetchSchedule());
+    }
     render() {
         const matchArray = this.props.matches.map((match, index) => (
             <li key={index}>
@@ -16,3 +21,10 @@ export default class HomePage extends React.Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    matches: state.matches
+});
+
+
+export default connect(mapStateToProps)(HomePage);

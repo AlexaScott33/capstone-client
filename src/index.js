@@ -1,20 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import HomePage from './components/homepage';
+import store from './store';
 import './index.css';
 
-const matches = [
-    'Game 1',
-    'Game 2',
-    'Game 3',
-    'Game 4',
-    'Game 5',
-    'Game 6',
-    'Game 7',
-    'Game 8'
-  ];
+
 
 ReactDOM.render(
-    <HomePage matches={matches}/>,
-      document.getElementById('root')
+  <Provider store={store}>
+      <HomePage />
+  </Provider>, 
+  document.getElementById('root')
 );
