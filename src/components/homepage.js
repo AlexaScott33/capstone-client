@@ -1,30 +1,23 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { fetchMatches } from '../actions/matches';
+import Signup from './signup';
+import Matches from './matches';
+import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 
-export class HomePage extends React.Component {
-    componentDidMount() {
-        this.props.dispatch(fetchMatches());
-    }
-    render() {
-        const matchArray = this.props.matches.map((match, index) => (
-            <li key={index}>
-                {match.date} {match.home} {match.away} {match.score}
-            </li>
-        ))
+export default function HomePage() {
+    
         return (
-          <div>
-            <ul>
-                {matchArray}
-            </ul>
-          </div>  
+            <Router>
+                <div>
+                <h1>WPL</h1>
+                    <Switch>
+                        <Route exact path="/" component={Matches}/>
+                        <Route exact path="/signup" component={Signup}/> 
+                    </Switch>
+                </div>
+            </Router>
         )
     }
-}
-
-const mapStateToProps = (state) => ({
-    matches: state.matches
-});
 
 
-export default connect(mapStateToProps)(HomePage);
+
+
