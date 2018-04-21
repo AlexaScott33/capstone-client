@@ -1,9 +1,9 @@
 import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
-import scheduleReducer from './reducers/schedule';
+import matchesReducer from './reducers/matches';
 
 export default createStore(
-        scheduleReducer,
+        matchesReducer,
         //window...
         applyMiddleware(thunk)
 );

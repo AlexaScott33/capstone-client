@@ -1,8 +1,8 @@
 import { 
-        FETCH_SCHEDULE_REQUEST,
-        FETCH_SCHEDULE_SUCCESS,
-        FETCH_SCHEDULE_ERROR
-} from '../actions/schedule';
+        FETCH_MATCHES_REQUEST,
+        FETCH_MATCHES_SUCCESS,
+        FETCH_MATCHES_ERROR
+} from '../actions/matches';
 
 const initialState = {
     matches: [], 
@@ -10,20 +10,20 @@ const initialState = {
     error: null
 }
 
-export default function scheduleReducer(state=initialState, action) {
-    if (action.type === FETCH_SCHEDULE_REQUEST) {
+export default function matchesReducer(state=initialState, action) {
+    if (action.type === FETCH_MATCHES_REQUEST) {
         return Object.assign({}, state, {
             loading: true
         });
     }
-    else if (action.type === FETCH_SCHEDULE_SUCCESS) {
+    else if (action.type === FETCH_MATCHES_SUCCESS) {
         return Object.assign({}, state, {
             matches: action.matches,
             loading: false,
             error: null
         });
     }
-    else if (action.type === FETCH_SCHEDULE_ERROR) {
+    else if (action.type === FETCH_MATCHES_ERROR) {
         return Object.assign({}, state, {
             loading: false,
             error: action.error
