@@ -1,17 +1,21 @@
 import React from 'react';
 import Signup from './signup';
 import Matches from './matches';
-import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import Match from './match';
+import { BrowserRouter as Router, Route, Link, Redirect, Switch} from 'react-router-dom';
 
 export default function HomePage() {
     
         return (
             <Router>
                 <div>
-                <h1>WPL</h1>
+                    <h1>WPL</h1>
+                    <Link to="/home">Home</Link>
                     <Switch>
-                        <Route exact path="/" component={Matches}/>
+                        <Redirect exact from="/" to="/home" />
+                        <Route exact path="/home" component={Matches}/>
                         <Route exact path="/signup" component={Signup}/> 
+                        <Route path="/match/:id" component={Match}/> 
                     </Switch>
                 </div>
             </Router>
