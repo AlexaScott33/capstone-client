@@ -5,9 +5,9 @@ export default function LoginForm() {
         <div>
             <h3>Existing Users Login</h3>
            <form>
-                <label>UserName</label>
+                <label htmlFor="user-name-input">UserName</label>
                 <input type="text" name="user-name-input"></input> <br />
-                <label>Password</label>
+                <label htmlFor="password-input">Password</label>
                 <input type="text" name="password-input"></input> <br />
                 <button type="submit">Submit</button>
             </form>
