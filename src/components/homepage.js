@@ -9,7 +9,7 @@ export default function HomePage() {
         return (
             <Router>
                 <div>
-                    <h1>WPL</h1>
+                    <h1>WPL Rugby</h1>
                     <Link to="/home">Home</Link>
                     <Switch>
                         <Redirect exact from="/" to="/home" />

@@ -19,6 +19,7 @@ export class Matches extends React.Component {
             <div>
                 <Header />
                 <main>
+                    <h3>Matches/Schedule</h3>
                         <ul>
                             {matchArray}
                         </ul>
@@ -29,7 +30,7 @@ export class Matches extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    matches: state.matches
+    matches: state.matchesReducer.matches
 });
 
 

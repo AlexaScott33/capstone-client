@@ -1,35 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchMatch } from '../actions/matches';
+import { fetchMatch } from '../actions/match';
 
 export class Match extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchMatch(this.props.match.params.id));
-        console.log(this.props);
     }
     
     render() {
-        // const matchById = this.props.match.id;
-        // console.log('!!!', matchById);
+        const matchDate = this.props.matchObj.date;
+        const matchHomeTeam = this.props.matchObj.home;
+        const matchAwayTeam = this.props.matchObj.away;
+        const matchScore = this.props.matchObj.score;
         return (
             <div>
-                {/* {this.props.match} */}
-                <p>need to get specific match by id!!!</p>
+                <h3>Single Match Information</h3>
+                {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
+                {/* comment comp and Prediction comp */}
             </div>
         )
     }
 }
 
-const mapStateToProps = (state, props) => {
-    // const matchId = props.match.params.matchId;
-    // const game = state[matchId];
-    // return Object.assign({}, game, {
-    //     match: game
-    // })
-    // return {
-    //     match: state[matchId]
-    // }
-};
+const mapStateToProps = (state, props) => ({
+    matchObj: state.matchReducer.match
+});
 
 
 export default connect(mapStateToProps)(Match);
