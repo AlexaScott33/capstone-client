@@ -6,6 +6,7 @@ export class LoginForm extends React.Component {
     onSubmit(values) {
         const username = values.username.value;
         const password = values.password.value;
+        console.log(`Logging in as user:${username}`);
         return this.props
             .dispatch(login(username, password))
     }
