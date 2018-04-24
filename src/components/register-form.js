@@ -1,11 +1,12 @@
 import React from 'react';
-import { Field, reduxForm, focus } from 'redux-form';
+import {connect} from 'react-redux';
+// import { Field, reduxForm, focus } from 'redux-form';
 import { registerUser } from '../actions/users';
-import { login } from '../actions/auth';
-import Input from './input';
-import {required, nonEmpty, matches, length, isTrimmed} from '../validators';
-const passwordLength = length({min: 10, max: 72});
-const matchesPassword = matches('password');
+// import { login } from '../actions/auth';
+// import Input from './input';
+// import {required, nonEmpty, matches, length, isTrimmed} from '../validators';
+// const passwordLength = length({min: 10, max: 72});
+// const matchesPassword = matches('password');
 
 export class RegisterForm extends React.Component {
     onSubmit(values) {
@@ -15,7 +16,7 @@ export class RegisterForm extends React.Component {
             firstname: values.firstname.value,
             lastname: values.lastname.value,
             username: values.username.value,
-            password: values.password.value,
+            password: values.password.value
         }
         return this.props
             .dispatch(registerUser(user))
@@ -25,18 +26,18 @@ export class RegisterForm extends React.Component {
     render() {
         return (
             <div>
+                <h3>Register New User</h3>
                  <form onSubmit={(e) => {
                      e.preventDefault();
                      this.onSubmit(e.target);
-
                  }}>
-                    <label htmlFor="first-name-input">FirstName</label>
+                    <label htmlFor="firstname">FirstName</label>
                     <input type="text" name="firstname"></input> <br />
-                    <label htmlFor="last-name-input">LastName</label>
+                    <label htmlFor="lastname">LastName</label>
                     <input type="text" name="lastname"></input> <br />
-                    <label htmlFor="user-name-input">UserName</label>
+                    <label htmlFor="username">UserName</label>
                     <input type="text" name="username"></input> <br />
-                    <label htmlFor="password-input">Password</label>
+                    <label htmlFor="password">Password</label>
                     <input type="text" name="password"></input> <br />
                     {/* <label htmlFor="verify-password-input">Verify Password</label>
                     <input type="text" name="verifyPassword"></input> <br /> */}
@@ -47,47 +48,48 @@ export class RegisterForm extends React.Component {
     }
 }
 
-export default reduxForm({
-    form: 'registration'
-})(RegisterForm);
+export default connect()(RegisterForm);
 
 
 
+// export default reduxForm({
+//     form: 'registration'
+// })(RegisterForm);
 
 
-{/* <form>
-                    <label htmlFor="firstname">FirstName</label>
-                    <Field 
-                        component={Input}
-                        type="text" 
-                        name="firstname" 
-                    /> <br />
-                    <label htmlFor="lastname">LastName</label>
-                    <Field 
-                        component={Input} 
-                        type="text" 
-                        name="lastname" 
-                    /> <br />
-                    <label htmlFor="username">UserName</label>
-                    <Field 
-                        component={Input} 
-                        type="text"
-                        name="username"
-                        validate={[required, nonEmpty, isTrimmed]} 
-                    /> <br />
-                    <label htmlFor="password">Password</label>
-                    <Field 
-                        component={Input} 
-                        type="text" 
-                        name="password"
-                        validate={[required, passwordLength, isTrimmed]}
-                    /> <br />
-                    <label htmlFor="verifyPassword">Verify Password</label>
-                    <Field 
-                        component={Input} 
-                        type="text" 
-                        name="verifyPassword"
-                        validate={[required, nonEmpty, matchesPassword]}
-                    /> <br />
-                    <button type="submit">Submit</button>
-                </form> */}
+// {/* <form>
+//                     <label htmlFor="firstname">FirstName</label>
+//                     <Field 
+//                         component={Input}
+//                         type="text" 
+//                         name="firstname" 
+//                     /> <br />
+//                     <label htmlFor="lastname">LastName</label>
+//                     <Field 
+//                         component={Input} 
+//                         type="text" 
+//                         name="lastname" 
+//                     /> <br />
+//                     <label htmlFor="username">UserName</label>
+//                     <Field 
+//                         component={Input} 
+//                         type="text"
+//                         name="username"
+//                         validate={[required, nonEmpty, isTrimmed]} 
+//                     /> <br />
+//                     <label htmlFor="password">Password</label>
+//                     <Field 
+//                         component={Input} 
+//                         type="text" 
+//                         name="password"
+//                         validate={[required, passwordLength, isTrimmed]}
+//                     /> <br />
+//                     <label htmlFor="verifyPassword">Verify Password</label>
+//                     <Field 
+//                         component={Input} 
+//                         type="text" 
+//                         name="verifyPassword"
+//                         validate={[required, nonEmpty, matchesPassword]}
+//                     /> <br />
+//                     <button type="submit">Submit</button>
+//                 </form> */}
