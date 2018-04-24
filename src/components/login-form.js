@@ -9,6 +9,7 @@ export class LoginForm extends React.Component {
         console.log(`Logging in as user:${username}`);
         return this.props
             .dispatch(login(username, password))
+            // .then(()=>this.props.history.push('/home'))
     }
 
     render() {
