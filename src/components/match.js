@@ -15,12 +15,11 @@ export class Match extends React.Component {
         const matchHomeTeam = this.props.matchObj.home;
         const matchAwayTeam = this.props.matchObj.away;
         const matchScore = this.props.matchObj.score;
-        const matchComment = this.props.matchObj.comments;
         return (
             <div>
                 <h3>Single Match Information</h3>
-                {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore} {matchComment}
-                <CommentForm />
+                {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
+                <CommentForm id={this.props.match.params.id}/>
                 <PredictionForm />
             </div>
         )

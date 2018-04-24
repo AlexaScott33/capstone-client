@@ -4,8 +4,7 @@ import { fetchComment, addComment } from '../actions/comments';
 
 export class CommentForm extends React.Component {
     componentDidMount() {
-        this.props.dispatch(fetchComment());
-        // console.log(this.props);
+        this.props.dispatch(fetchComment(this.props.id));
     }
     render() {
         const commentList = this.props.comments.map((comment, index) => (
@@ -23,7 +22,7 @@ export class CommentForm extends React.Component {
                 e.preventDefault();
                 const userInput = e.target.commentInput.value;
                 e.target.commentInput.value='';
-                this.props.dispatch(addComment(userInput));
+                this.props.dispatch(addComment(userInput, this.props.id));
             }}>
                     {/* <label htmlFor="comment-input">Comments</label> */}
                     <input type="text" name="commentInput"></input> <br />

@@ -20,7 +20,7 @@ export const fetchCommentError = error => ({
 //needs to take matchId
 export const fetchComment = (id) => dispatch => {
     dispatch(fetchCommentRequest());
-    fetch(`${API_BASE_URL}/api/${id}/comments`)
+    fetch(`${API_BASE_URL}/api/matches/${id}/comments`)
     .then(res => {
         if (!res.ok) {
             return Promise.reject(res.statusText);
@@ -52,11 +52,11 @@ export const addCommentError = error => ({
 });
 
 export const ADD_COMMENT = 'ADD_COMMENT';
-export const addComment = (values) => dispatch => {
+export const addComment = (values, id) => dispatch => {
     dispatch(addCommentRequest())
     console.log('STRINGIFIED VALUES:', JSON.stringify(values));
     const newItem = { content: values };
-    fetch(`${API_BASE_URL}/api/comments`, {
+    fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
         method: 'POST', 
         body: JSON.stringify(newItem),
         headers: {
