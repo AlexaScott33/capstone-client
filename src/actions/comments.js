@@ -17,9 +17,10 @@ export const fetchCommentError = error => ({
     error
 });
 
-export const fetchComment = () => dispatch => {
+//needs to take matchId
+export const fetchComment = (id) => dispatch => {
     dispatch(fetchCommentRequest());
-    fetch(`${API_BASE_URL}/api/comments`)
+    fetch(`${API_BASE_URL}/api/${id}/comments`)
     .then(res => {
         if (!res.ok) {
             return Promise.reject(res.statusText);

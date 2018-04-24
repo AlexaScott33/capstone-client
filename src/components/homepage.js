@@ -12,7 +12,7 @@ export default function HomePage() {
                     <h1>WPL Rugby</h1>
                     <Link to="/home">Home</Link>
                     <Switch>
-                        <Redirect exact from="/" to="/home" />
+                        <Redirect exact from="/" to="/signup" />
                         <Route exact path="/home" component={Matches}/>
                         <Route exact path="/signup" component={Signup}/> 
                         <Route path="/match/:id" component={Match}/> 

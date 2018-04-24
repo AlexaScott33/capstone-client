@@ -5,7 +5,7 @@ import { fetchComment, addComment } from '../actions/comments';
 export class CommentForm extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchComment());
-        console.log(this.props);
+        // console.log(this.props);
     }
     render() {
         const commentList = this.props.comments.map((comment, index) => (
@@ -34,7 +34,7 @@ export class CommentForm extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, props) => ({
     comments: state.commentsReducer.comments
 });
 
