@@ -42,7 +42,7 @@ export class RegisterForm extends React.Component {
                     <input type="text" name="password"></input> <br />
                     {/* <label htmlFor="verify-password-input">Verify Password</label>
                     <input type="text" name="verifyPassword"></input> <br /> */}
-                    <button type="submit">Submit</button>
+                    <button type="submit">Register</button>
                 </form>
             </div>
         )
