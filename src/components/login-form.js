@@ -1,13 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { login } from '../actions/auth';
 
 export class LoginForm extends React.Component {
-    constructor(props) {
-        super(props)
-        this.onSubmit = this.onSubmit.bind(this);
-    }
-
     onSubmit(values) {
         const username = values.username.value;
         const password = values.password.value;
@@ -36,4 +32,4 @@ export class LoginForm extends React.Component {
 }
 }
 
-export default connect()(LoginForm);
+export default withRouter(connect()(LoginForm));
