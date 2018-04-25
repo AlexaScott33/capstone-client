@@ -3,7 +3,6 @@ import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 // import {loadAuthToken} from './local-storage';
 import authReducer from './reducers/auth';
-import protectedDataReducer from './reducers/protected-data';
 import matchesReducer from './reducers/matches';
 import matchReducer from './reducers/match';
 import commentsReducer from './reducers/comments';
@@ -21,8 +20,7 @@ export default createStore(
         matchesReducer,
         matchReducer,
         commentsReducer,
-        authReducer,
-        protectedDataReducer
+        authReducer
         // formReducer,
         // predictionReducer
         }),

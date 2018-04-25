@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import CommentForm from './comment-form';
+import { Link } from 'react-router-dom';
+import { fetchMatch } from '../actions/match';
 // import PredictionForm from './prediction-form';
 
-import { connect } from 'react-redux';
-import { fetchMatch } from '../actions/match';
 
 export class Match extends React.Component {
     componentDidMount() {
@@ -17,9 +18,10 @@ export class Match extends React.Component {
         const matchScore = this.props.matchObj.score;
         return (
             <div>
+                <Link to="/home">Home</Link>
                 <h3>Single Match Information</h3>
                 {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
-                <CommentForm id={this.props.match.params.id}/>
+                <CommentForm id={this.props.match.params.id} />
                 {/* <PredictionForm /> */}
             </div>
         )

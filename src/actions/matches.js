@@ -19,7 +19,6 @@ export const fetchMatchesError = error => ({
 
 export const fetchMatches = () => (dispatch, getState) => {
     const authToken = getState().authReducer.authToken;
-    console.log(authToken);
     dispatch(fetchMatchesRequest());
     return fetch(`${API_BASE_URL}/api/matches`, {
         method: 'GET',
