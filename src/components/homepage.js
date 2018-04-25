@@ -2,7 +2,7 @@ import React from 'react';
 import Signup from './signup';
 import Matches from './matches';
 import Match from './match';
-import { BrowserRouter as Router, Route, Link, Redirect, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-router-dom';
 
 export default function HomePage() {
     

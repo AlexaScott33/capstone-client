@@ -3,13 +3,18 @@ import {connect} from 'react-redux';
 import { login } from '../actions/auth';
 
 export class LoginForm extends React.Component {
+    constructor(props) {
+        super(props)
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+
     onSubmit(values) {
         const username = values.username.value;
         const password = values.password.value;
-        console.log(`Logging in as user:${username}`);
+        console.log(`Logging in as user: ${username}`);
         return this.props
             .dispatch(login(username, password))
-            // .then(()=>this.props.history.push('/home'))
+            .then(()=>this.props.history.push('/home'))
     }
 
     render() {
