@@ -1,4 +1,4 @@
-import {API_BASE_URL} from '../config';
+import { API_BASE_URL } from '../config';
 
 export const FETCH_COMMENT_REQUEST = 'FETCH_COMMENT_REQUEST';
 export const fetchCommentRequest = () => ({
@@ -17,7 +17,6 @@ export const fetchCommentError = error => ({
     error
 });
 
-//needs to take matchId
 export const fetchComment = (id) => (dispatch, getState) => {
     const authToken = getState().authReducer.authToken;
     dispatch(fetchCommentRequest());

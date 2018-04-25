@@ -1,4 +1,4 @@
-import {API_BASE_URL} from '../config';
+import { API_BASE_URL } from '../config';
 
 export const FETCH_MATCHES_REQUEST = 'FETCH_MATCHES_REQUEST';
 export const fetchMatchesRequest = () => ({

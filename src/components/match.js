@@ -18,7 +18,8 @@ export class Match extends React.Component {
         const matchScore = this.props.matchObj.score;
         return (
             <div>
-                <Link to="/home">Home</Link>
+                <Link to="/home">Home</Link> <br />
+                <Link to="/signup">Logout</Link>
                 <h3>Single Match Information</h3>
                 {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
                 <CommentForm id={this.props.match.params.id} />

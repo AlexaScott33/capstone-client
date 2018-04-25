@@ -1,7 +1,7 @@
-import {API_BASE_URL} from '../config';
+import { API_BASE_URL } from '../config';
 
-import {SubmissionError} from 'redux-form';
-import {normalizeResponseErrors} from './utils';
+import { SubmissionError } from 'redux-form';
+import { normalizeResponseErrors } from './utils';
 
 // export const REGISTER_NEW_USER = 'REGISTER_NEW_USER'
 // export const registerNewUser = (user) => ({

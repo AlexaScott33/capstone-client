@@ -25,7 +25,7 @@ export class CommentForm extends React.Component {
                 e.target.commentInput.value='';
                 this.props.dispatch(addComment(userInput, this.props.id));
             }}>
-                    {/* <label htmlFor="comment-input">Comments</label> */}
+                    <label htmlFor="commentInput">Make a Comment</label>
                     <input type="text" name="commentInput"></input> <br />
                     <button type="submit">Submit</button>
                 </form>
