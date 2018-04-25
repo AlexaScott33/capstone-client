@@ -1,6 +1,6 @@
 import React from 'react';
 import CommentForm from './comment-form';
-import PredictionForm from './prediction-form';
+// import PredictionForm from './prediction-form';
 
 import { connect } from 'react-redux';
 import { fetchMatch } from '../actions/match';
@@ -20,7 +20,7 @@ export class Match extends React.Component {
                 <h3>Single Match Information</h3>
                 {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
                 <CommentForm id={this.props.match.params.id}/>
-                <PredictionForm />
+                {/* <PredictionForm /> */}
             </div>
         )
     }

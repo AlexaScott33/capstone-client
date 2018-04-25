@@ -18,9 +18,15 @@ export const fetchCommentError = error => ({
 });
 
 //needs to take matchId
-export const fetchComment = (id) => dispatch => {
+export const fetchComment = (id) => (dispatch, getState) => {
+    const authToken = getState().authReducer.authToken;
     dispatch(fetchCommentRequest());
-    fetch(`${API_BASE_URL}/api/matches/${id}/comments`)
+    return fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
+        headers: {
+            // Provide our auth token as credentials
+            Authorization: `Bearer ${authToken}`
+        }
+    })
     .then(res => {
         if (!res.ok) {
             return Promise.reject(res.statusText);
@@ -52,14 +58,16 @@ export const addCommentError = error => ({
 });
 
 export const ADD_COMMENT = 'ADD_COMMENT';
-export const addComment = (values, id) => dispatch => {
+export const addComment = (values, id) => (dispatch, getState) => {
+    const authToken = getState().authReducer.authToken;
     dispatch(addCommentRequest())
     console.log('STRINGIFIED VALUES:', JSON.stringify(values));
     const newItem = { content: values };
-    fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
+    return fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
         method: 'POST', 
         body: JSON.stringify(newItem),
         headers: {
+            Authorization: `Bearer ${authToken}`,
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           }

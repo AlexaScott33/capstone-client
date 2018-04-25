@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { login } from '../actions/auth';
-import { fetchProtectedData } from '../actions/protected-data';
+// import { fetchProtectedData } from '../actions/protected-data';
 
 export class LoginForm extends React.Component {
     onSubmit(values) {
@@ -12,7 +12,7 @@ export class LoginForm extends React.Component {
         return this.props
             .dispatch(login(username, password))
             .then(()=>this.props.history.push('/home'))
-            .then(() => this.props.dispatch(fetchProtectedData()))
+            // .then(() => this.props.dispatch(fetchProtectedData()))
     }
 
     render() {

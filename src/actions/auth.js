@@ -39,8 +39,8 @@ const storeAuthInfo = (authToken, dispatch) => {
     const decodedToken = jwtDecode(authToken);
     dispatch(setAuthToken(authToken));
     dispatch(authSuccess(decodedToken.user));
-    // console.log(authToken);
     saveAuthToken(authToken);
+    // console.log(authToken);
 };
 
 export const login = (username, password) => dispatch => {

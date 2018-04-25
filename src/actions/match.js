@@ -17,9 +17,16 @@ export const fetchMatchError = error => ({
     error
 });
 
-export const fetchMatch = (id) => dispatch => {
+export const fetchMatch = (id) => (dispatch, getState) => {
+    const authToken = getState().authReducer.authToken;
     dispatch(fetchMatchRequest());
-    fetch(`${API_BASE_URL}/api/matches/${id}`)
+    return fetch(`${API_BASE_URL}/api/matches/${id}`, {
+        method: 'GET',
+        headers: {
+            // Provide our auth token as credentials
+            Authorization: `Bearer ${authToken}`
+        }
+    })
     .then(res => {
         if (!res.ok) {
             return Promise.reject(res.statusText);

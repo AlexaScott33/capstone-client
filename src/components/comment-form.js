@@ -6,6 +6,7 @@ export class CommentForm extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchComment(this.props.id));
     }
+    
     render() {
         const commentList = this.props.comments.map((comment, index) => (
             <li key={index}>
