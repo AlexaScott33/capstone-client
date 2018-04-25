@@ -10,7 +10,7 @@ export class CommentForm extends React.Component {
     render() {
         const commentList = this.props.comments.map((comment, index) => (
             <li key={index}>
-                {comment.content}
+                {comment.userId.username} {comment.content} 
             </li>
         ))
         return (

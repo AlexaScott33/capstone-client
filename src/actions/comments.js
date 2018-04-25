@@ -32,8 +32,8 @@ export const fetchComment = (id) => (dispatch, getState) => {
         }
         return res.json();
     })
-    .then(comment => {
-        dispatch(fetchCommentSuccess(comment));
+    .then(result => {
+        dispatch(fetchCommentSuccess(result.comments));
     }).catch(err => {
         dispatch(fetchCommentError(err));
     });
@@ -45,9 +45,9 @@ export const addCommentRequest = () => ({
 });
 
 export const ADD_COMMENT_SUCCESS = 'ADD_COMMENT_SUCCESS';
-export const addCommentSuccess = comment => ({
+export const addCommentSuccess = comments => ({
     type: ADD_COMMENT_SUCCESS,
-    comment
+    comments
 });
 
 export const ADD_COMMENT_ERROR = 'ADD_COMMENT_ERROR';
@@ -77,8 +77,8 @@ export const addComment = (values, id) => (dispatch, getState) => {
         }
         return res.json();
     })
-    .then(comment => {
-        dispatch(addCommentSuccess(comment));
+    .then(result => {
+        dispatch(addCommentSuccess(result.comments));
     }).catch(err => {
         dispatch(addCommentError(err));
     });
