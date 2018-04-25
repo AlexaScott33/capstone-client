@@ -46,9 +46,9 @@ export const addCommentRequest = () => ({
 });
 
 export const ADD_COMMENT_SUCCESS = 'ADD_COMMENT_SUCCESS';
-export const addCommentSuccess = comments => ({
+export const addCommentSuccess = comment => ({
     type: ADD_COMMENT_SUCCESS,
-    comments
+    comment
 });
 
 export const ADD_COMMENT_ERROR = 'ADD_COMMENT_ERROR';
