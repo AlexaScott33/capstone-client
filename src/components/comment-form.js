@@ -26,7 +26,7 @@ export class CommentForm extends React.Component {
                 this.props.dispatch(addComment(userInput, this.props.id));
             }}>
                     <label htmlFor="commentInput">Make a Comment</label>
-                    <input type="text" name="commentInput"></input> <br />
+                    <textarea name="commentInput" /> <br />
                     <button type="submit">Submit</button>
                 </form>
             </div>
