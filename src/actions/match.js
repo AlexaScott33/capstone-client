@@ -1,4 +1,5 @@
 import { API_BASE_URL } from '../config';
+import { loadAuthToken } from '../local-storage';
 
 export const FETCH_MATCH_REQUEST = 'FETCH_MATCH_REQUEST';
 export const fetchMatchRequest = () => ({
@@ -18,7 +19,7 @@ export const fetchMatchError = error => ({
 });
 
 export const fetchMatch = (id) => (dispatch, getState) => {
-    const authToken = getState().authReducer.authToken;
+    const authToken = loadAuthToken() || getState().authReducer.authToken;
     dispatch(fetchMatchRequest());
     return fetch(`${API_BASE_URL}/api/matches/${id}`, {
         method: 'GET',

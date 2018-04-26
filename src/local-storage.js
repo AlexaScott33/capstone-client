@@ -8,8 +8,8 @@ export const saveAuthToken = authToken => {
     } catch (e) {}
 };
 
-// export const clearAuthToken = () => {
-//     try {
-//         localStorage.removeItem('authToken');
-//     } catch (e) {}
-// };
+export const clearAuthToken = () => {
+    try {
+        localStorage.removeItem('authToken');
+    } catch (e) {}
+};

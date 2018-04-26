@@ -1,4 +1,5 @@
 import { API_BASE_URL } from '../config';
+import { loadAuthToken } from '../local-storage';
 
 export const FETCH_COMMENT_REQUEST = 'FETCH_COMMENT_REQUEST';
 export const fetchCommentRequest = () => ({
@@ -18,7 +19,7 @@ export const fetchCommentError = error => ({
 });
 
 export const fetchComment = (id) => (dispatch, getState) => {
-    const authToken = getState().authReducer.authToken;
+    const authToken = loadAuthToken() || getState().authReducer.authToken;
     dispatch(fetchCommentRequest());
     return fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
         headers: {
@@ -58,7 +59,7 @@ export const addCommentError = error => ({
 
 export const ADD_COMMENT = 'ADD_COMMENT';
 export const addComment = (values, id) => (dispatch, getState) => {
-    const authToken = getState().authReducer.authToken;
+    const authToken = loadAuthToken() || getState().authReducer.authToken;
     dispatch(addCommentRequest())
     console.log('STRINGIFIED VALUES:', JSON.stringify(values));
     const newItem = { content: values };

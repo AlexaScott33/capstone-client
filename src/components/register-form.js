@@ -18,7 +18,7 @@ export class RegisterForm extends React.Component {
             username: values.username.value,
             password: values.password.value
         }
-        console.log(`Registering new user with firstname: ${user.firstname}, lastname: ${user.lastname}, username: ${user.password}`);
+        console.log(`Registering new user with firstname: ${user.firstname}, lastname: ${user.lastname}, username: ${user.username}`);
         return this.props
             .dispatch(registerUser(user))
         //     .then(()=>this.props.dispatch(login(username, password)))
