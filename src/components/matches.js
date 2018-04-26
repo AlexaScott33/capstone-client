@@ -11,21 +11,34 @@ export class Matches extends React.Component {
     
     render() {
         const matchArray = this.props.matches.map((match, index) => (
-            <li key={index}>
-                <Link to={`/match/${match.id}`}>{match.date}</Link> {match.home} {match.away} {match.score}
-            </li>
-        ))
+            <tr key={index}>
+                <td><Link to={`/match/${match.id}`}>Details</Link></td>
+                <td>{match.date}</td>
+                <td>{match.home}</td>
+                <td>{match.away}</td>
+                <td>{match.score}</td>
+            </tr>
+        ));
         return (
             <div>
                 <Header />
                 <main>
                     <h3>Matches/Schedule</h3>
-                        <ul>
-                            {matchArray}
-                        </ul>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Details</th>
+                                    <th>Date</th>
+                                    <th>Home</th>
+                                    <th>Away</th>
+                                    <th>Score</th>
+                                </tr>
+                                {matchArray}
+                            </tbody>
+                        </table>
                 </main>
             </div>
-        )
+        );
     }
 }
 
