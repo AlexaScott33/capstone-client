@@ -33,7 +33,10 @@ export class RegisterForm extends React.Component {
                      this.onSubmit(e.target);
                  }}>
                     <label htmlFor="firstname">FirstName</label>
-                    <input type="text" name="firstname"></input> <br />
+                    <input 
+                        type="text" 
+                        name="firstname">
+                    </input> <br />
                     <label htmlFor="lastname">LastName</label>
                     <input type="text" name="lastname"></input> <br />
                     <label htmlFor="username">UserName</label>
