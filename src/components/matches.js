@@ -25,14 +25,16 @@ export class Matches extends React.Component {
                 <main>
                     <h3>Matches/Schedule</h3>
                         <table>
+                                <thead>
+                                    <tr>
+                                        <th>Details</th>
+                                        <th>Date</th>
+                                        <th>Home</th>
+                                        <th>Away</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
                             <tbody>
-                                <tr>
-                                    <th>Details</th>
-                                    <th>Date</th>
-                                    <th>Home</th>
-                                    <th>Away</th>
-                                    <th>Score</th>
-                                </tr>
                                 {matchArray}
                             </tbody>
                         </table>
