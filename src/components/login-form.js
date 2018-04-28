@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, reduxForm, focus } from 'redux-form';
 import Input from './input';
+import { Link } from 'react-router-dom';
 import { login } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 
@@ -34,6 +35,7 @@ export class LoginForm extends React.Component {
                     /> <br />
                     <button type="submit" id="login-button">Login</button>
                 </form>
+                <Link to="/signup">New to Commentators? Click to Register</Link> <br />
             </div>
         )
     }

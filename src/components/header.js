@@ -16,7 +16,6 @@ export class Header extends React.Component {
         return (
             <div>
                 <nav>
-                    <Link to="/signup">Signup</Link> <br />
                     <Link to="/signup">
                         <button onClick={() => this.logOut()}>Log out</button>
                     </Link>    
