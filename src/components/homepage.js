@@ -5,6 +5,7 @@ import Match from './match';
 import LoginForm from './login-form';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
+import './homepage.css';
 
 export default function HomePage() {
     

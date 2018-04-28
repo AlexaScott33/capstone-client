@@ -18,11 +18,16 @@ export class RegisterForm extends React.Component {
     }
     render() {
         return (
-            <div className="register-form">
-                <h3>Register New User</h3>
-                <form name="registration"
-                        onSubmit={this.props.handleSubmit(values => this.props.dispatch(registerUser(values))
-                                                                                .then(this.setState({ msg: 'Thank you for signing up! Please login.' })))}>
+            <div className="container">
+                {this.state.msg ? this.state.msg : ''}
+                <form 
+                    className="register-form" 
+                    name="registration"
+                    onSubmit={this.props.handleSubmit(values => {
+                        this.props.dispatch(registerUser(values))
+                                    .then(this.setState({ msg: 'Thank you for signing up! Please login.' }))}
+                            )}>
+                    <h3>Register New User</h3>                    
                     <label htmlFor="firstname">First Name</label>
                     <Field 
                         component={Input}
@@ -48,7 +53,7 @@ export class RegisterForm extends React.Component {
                     <label htmlFor="password">Password</label>
                     <Field 
                         component={Input} 
-                        type="text" 
+                        type="password" 
                         name="password"
                         placeholder="Enter a password"
                         validate={[required, passwordLength, isTrimmed]}
@@ -56,7 +61,7 @@ export class RegisterForm extends React.Component {
                     <label htmlFor="verifyPassword">Confirm Password</label>
                     <Field
                         component={Input} 
-                        type="text" 
+                        type="password" 
                         name="verifyPassword"
                         placeholder="Re-enter in password"
                         validate={[required, nonEmpty, matchesPassword]}

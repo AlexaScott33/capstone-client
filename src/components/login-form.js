@@ -10,15 +10,12 @@ import './login-form.css';
 export class LoginForm extends React.Component {
     render() {
         return (
-            <div className="login-form">
-                <h3>Existing Users Login</h3>
-                <div>
-                    {this.props.touched && this.props.error && <span>{this.props.error.error}</span>}
-                </div>
-                <form name="login"
+            <div className="container">
+                <form className="login-form" name="login"
                 onSubmit={this.props.handleSubmit(values => this.props.dispatch(login(values.username, values.password))
                                                                     .then(()=>this.props.history.push('/home')))}
                 >
+                    <h3>Existing Users Login</h3>
                     <label htmlFor="username">Username</label>
                     <Field
                         className="field"
@@ -30,7 +27,7 @@ export class LoginForm extends React.Component {
                     <Field
                         className="field"
                         component={Input} 
-                        type="text" 
+                        type="password" 
                         name="password"
                     /> <br />
                     <button type="submit" id="login-button">Login</button>

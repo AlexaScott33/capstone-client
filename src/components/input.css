@@ -1,4 +1,11 @@
-input[type="text"] {
-    border-radius: 5px;
+input {
+    border-radius: 4px;
     background-color: lightgray;
+    margin: 2px;
+    padding: 2px;
+    font-style: italic;
 }
+
+/* input[type="placeholder"] {
+    font-style: italic;
+} */

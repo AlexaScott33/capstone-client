@@ -1,16 +1,18 @@
 .login-form {
     border: 1px solid gray;
     border-radius: 2px;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    margin: auto;
-    background-image: linear-gradient(120deg, #003973 0%, #141E30 100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(120deg, #3B4371 0%, #e6dbc9 100%);
     color: white;
+    width: 300px;
 }
 
 #login-button {
     border: 1px solid gray;
-    border-radius: 2px;
+    border-radius: 5px;
     color: white;
     background: #4CAF50;;
     width: 100px;
