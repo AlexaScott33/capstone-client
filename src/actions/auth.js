@@ -62,7 +62,7 @@ export const login = (username, password) => dispatch => {
             .then(({authToken}) => storeAuthInfo(authToken, dispatch))
             .catch(err => {
                 const {code} = err;
-                const message =
+                const message = err['message'] =
                     code === 401
                         ? 'Incorrect username or password'
                         : 'Unable to login, please try again';
@@ -71,7 +71,7 @@ export const login = (username, password) => dispatch => {
                 // Form
                 return Promise.reject(
                     new SubmissionError({
-                        _error: message
+                        error: message
                     })
                 );
             })

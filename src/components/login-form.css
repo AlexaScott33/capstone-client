@@ -1,0 +1,18 @@
+.login-form {
+    border: 1px solid gray;
+    border-radius: 2px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    margin: auto;
+    background-image: linear-gradient(120deg, #003973 0%, #141E30 100%);
+    color: white;
+}
+
+#login-button {
+    border: 1px solid gray;
+    border-radius: 2px;
+    color: white;
+    background: #4CAF50;;
+    width: 100px;
+    height: 25px;
+}
