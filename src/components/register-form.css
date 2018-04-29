@@ -12,6 +12,14 @@
 
 h3 {
     color: white;
+    text-align: center;
+}
+
+.register-logo {
+    width: 50px;
+    height: 40px;
+    margin-top: 5px;
+    float: right;
 }
 
 #register-button {

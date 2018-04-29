@@ -15,6 +15,7 @@ export class LoginForm extends React.Component {
                 onSubmit={this.props.handleSubmit(values => this.props.dispatch(login(values.username, values.password))
                                                                     .then(()=>this.props.history.push('/home')))}
                 >
+                    <img className="login-logo" src="https://imgur.com/1S2ywJa.png" alt="Login Logo"></img>                   
                     <h3>Existing Users Login</h3>
                     <label htmlFor="username">Username</label>
                     <Field
@@ -22,6 +23,7 @@ export class LoginForm extends React.Component {
                         component={Input} 
                         type="text"
                         name="username"
+                        placeholder="Your username"
                     /> <br />
                     <label htmlFor="password">Password</label>
                     <Field
@@ -29,6 +31,7 @@ export class LoginForm extends React.Component {
                         component={Input} 
                         type="password" 
                         name="password"
+                        placeholder="Your password"
                     /> <br />
                     <button type="submit" id="login-button">Login</button>
                 </form>
