@@ -35,6 +35,8 @@ export default class Input extends React.Component {
                     id={this.props.input.name}
                     type={this.props.type}
                     placeholder={this.props.placeholder}
+                    onFocus={(e) => e.target.placeholder = ""}
+                    onBlur={(e) => e.target.placeholder =`${this.props.placeholder}`}
                     ref={input => (this.input = input)}>
                     {this.props.children}
                 </Element>
