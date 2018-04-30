@@ -44,7 +44,7 @@ export class LoginForm extends React.Component {
 export default withRouter(reduxForm({
     form: 'login',
     onSubmitFail: (error, dispatch) => {
-        console.log('this is the error', error);
+        alert(error.error);
         dispatch(focus('login', 'username'))}
     
 })(LoginForm));

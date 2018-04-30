@@ -49,7 +49,7 @@ export class RegisterForm extends React.Component {
                         type="text"
                         name="username"
                         placeholder="Enter a username"
-                        validate={[required, nonEmpty, isTrimmed]} 
+                        validate={[required, nonEmpty, isTrimmed]}
                     /> <br />
                     <label htmlFor="password">Password</label>
                     <Field 
