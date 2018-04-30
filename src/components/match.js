@@ -5,6 +5,7 @@ import CommentForm from './comment-form';
 import { fetchMatch } from '../actions/match';
 // import PredictionForm from './prediction-form';
 
+import './match.css';
 
 export class Match extends React.Component {
     componentDidMount() {
@@ -18,9 +19,34 @@ export class Match extends React.Component {
         const matchScore = this.props.matchObj.score;
         return (
             <div>
-                <Link to="/home">Home</Link> <br />
-                <h3>Single Match Information</h3>
-                {matchDate} {matchHomeTeam} {matchAwayTeam} {matchScore}
+                <section className="home-link">
+                    <Link to="/home">Home</Link> <br />
+                </section>
+                <table className="single-match-table">
+                    <thead>
+                        <tr>
+                            <th colSpan="2">Single Match Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td>{matchDate}</td>
+                        </tr>
+                        <tr>
+                            <td>Home Team</td>
+                            <td>{matchHomeTeam}</td>
+                        </tr>
+                        <tr>
+                            <td>Away Team</td>
+                            <td>{matchAwayTeam}</td>
+                        </tr>
+                        <tr>
+                            <td>Final Score</td>
+                            <td>{matchScore}</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <CommentForm id={this.props.match.params.id} />
                 {/* <PredictionForm /> */}
             </div>

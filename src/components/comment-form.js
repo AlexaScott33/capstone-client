@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchComment, addComment } from '../actions/comments';
 
+import './comment-form.css';
+
 export class CommentForm extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchComment(this.props.id));
@@ -10,24 +12,28 @@ export class CommentForm extends React.Component {
     render() {
         const commentList = this.props.comments.map((comment, index) => (
             <li key={index}>
-                {comment.userId.username} {comment.content} 
+                <strong>{comment.userId.username}:</strong> <i>"{comment.content}"</i>
             </li>
         ))
         return (
-            <div>
-                <h3>Comments about game</h3>
-                <ul>
+            <div className="comment-box-container">
+                <h3>See what people said about the match</h3>
+                <ul className="comment-box">
                     {commentList}
                 </ul>
-            <form onSubmit={(e) => {
+            <form className="comment-box-form" onSubmit={(e) => {
                 e.preventDefault();
                 const userInput = e.target.commentInput.value;
                 e.target.commentInput.value='';
                 this.props.dispatch(addComment(userInput, this.props.id));
             }}>
-                    <label htmlFor="commentInput">Make a Comment</label>
-                    <textarea name="commentInput" /> <br />
-                    <button type="submit">Submit</button>
+                    <textarea 
+                        name="commentInput" 
+                        placeholder="Leave a comment..."
+                        onFocus={(e) => e.target.placeholder = ""}
+                        onBlur={(e) => e.target.placeholder ="Leave a comment..."}>
+                    </textarea> <br />
+                    <button type="submit" id="comment-button">comment</button>
                 </form>
             </div>
         )
