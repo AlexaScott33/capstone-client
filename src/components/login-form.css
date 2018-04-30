@@ -1,3 +1,7 @@
+* {
+    text-align: center;
+}
+
 .login-form {
     border: 1px solid gray;
     border-radius: 2px;
@@ -22,7 +26,7 @@
     border: 1px solid gray;
     border-radius: 5px;
     color: white;
-    background: #4CAF50;;
-    width: 100px;
+    background: #4CAF50;
+    width: 120px;
     height: 25px;
 }

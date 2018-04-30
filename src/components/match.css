@@ -5,6 +5,10 @@
     margin-left: 10px;
 }
 
+/* .match-container {
+    display: inline-block;
+} */
+
 .single-match-table {
     border-collapse: collapse;
     margin: auto;

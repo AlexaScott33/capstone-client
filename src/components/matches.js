@@ -23,8 +23,9 @@ export class Matches extends React.Component {
         ));
         return (
             <div>
-                <Header />
+            <Header />
                     <h2>Matches of 2018</h2>
+                    <div className="table-responsive">
                         <table className="matches-table">
                                 <thead>
                                     <tr>
@@ -39,6 +40,7 @@ export class Matches extends React.Component {
                                 {matchArray}
                             </tbody>
                         </table>
+                    </div>
             </div>
         );
     }

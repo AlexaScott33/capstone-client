@@ -3,6 +3,14 @@ h2 {
     text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+    .table-responsive {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+
 .matches-table {
     border-collapse: collapse;
     margin: auto;

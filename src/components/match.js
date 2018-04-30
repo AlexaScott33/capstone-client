@@ -19,7 +19,7 @@ export class Match extends React.Component {
         const matchAwayTeam = this.props.matchObj.away;
         const matchScore = this.props.matchObj.score;
         return (
-            <div>
+            <div className="match-container">
                 <Header />
                 <section className="home-link">
                     <Link to="/home">Home</Link> <br />

@@ -7,7 +7,7 @@ import './signup.css';
 
 export default function SignUp() {
     return (
-        <div>
+        <div className="signup-container">
             <RegisterForm />
             <Link to="/login">Already have an account? Click to Login</Link> <br />
         </div>

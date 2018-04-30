@@ -35,7 +35,7 @@ export class LoginForm extends React.Component {
                     /> <br />
                     <button type="submit" id="login-button">Login</button>
                 </form>
-                <Link to="/signup">New to Commentators? Click to Register</Link> <br />
+                <Link className="link-to-register" to="/signup">New to Commentators? Click to Register</Link> <br />
             </div>
         )
     }

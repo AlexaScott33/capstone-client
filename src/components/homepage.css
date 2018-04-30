@@ -1,6 +1,13 @@
-nav {
-    position: fixed;
-    overflow: auto;
+@media screen and (max-width: 992px) {
+    .main {
+        padding-bottom: 60px;
+    }
+}
+
+.popup-link {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
 }
 
 .popup-button {

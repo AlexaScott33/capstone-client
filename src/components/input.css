@@ -3,10 +3,11 @@ input {
     background-color: lightgray;
     margin: 2px;
     padding: 5px;
+    width: 98%;
 }
 
 .form-error {
-  color: #e62739;
+  color: #cd5554;
   font-size: 15px;
 }
 

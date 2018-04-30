@@ -13,8 +13,12 @@ export default function HomePage() {
         return (
             <Router>
                 <div>
-                    <nav>
-                    <Popup trigger={<button className="popup-button"> What?</button>} position="right top">
+                    <header>
+                        <h1>WPL Rugby Commentators</h1>
+                    </header>
+                    <main role="main" className="main">
+                    <div className="popup-link">
+                    <Popup trigger={<button className="popup-button"> What?</button>} position="right center">
                             <div className="popup-box">
                                 <h4>WPL Rugby Commentators</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum urna eget diam iaculis, dictum consequat orci consectetur. Proin commodo quis nibh eu aliquet. Donec vel justo tempor, iaculis dui in, molestie felis. Suspendisse varius ultricies nisi, a placerat sapien efficitur sit amet. Aenean placerat metus consequat eros tincidunt blandit. Integer non eros est. Nam posuere mattis sagittis. Curabitur consequat massa urna, id varius justo lobortis porta.</p>
@@ -24,10 +28,7 @@ export default function HomePage() {
                             <img className="github-logo" src="https://imgur.com/vzk8iT1.png" alt="GitHub Logo"></img>
                             <div className="github">GitHub</div>                
                         </a>
-                    </nav>
-                    <header>
-                        <h1>WPL Rugby Commentators</h1>
-                    </header>
+                    </div>
                     <Switch>
                         <Redirect exact from="/" to="/signup" />
                         <Route exact path="/home" component={Matches} />
@@ -35,6 +36,7 @@ export default function HomePage() {
                         <Route exact path="/login" component={LoginForm} /> 
                         <Route path="/match/:id" component={Match}/> 
                     </Switch>
+                    </main>
                 </div>
             </Router>
         )
