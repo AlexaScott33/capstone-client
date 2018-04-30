@@ -14,26 +14,28 @@ export class Matches extends React.Component {
     render() {
         const matchArray = this.props.matches.map((match, index) => (
             <tr key={index}>
-                <td><Link to={`/match/${match.id}`}>Details</Link></td>
                 <td>{match.date}</td>
                 <td>{match.home}</td>
                 <td>{match.away}</td>
                 <td>{match.score}</td>
+                <td><Link to={`/match/${match.id}`}>Details</Link></td>
             </tr>
         ));
         return (
             <div>
                 <Header />
                 <main>
-                    <h2>Matches</h2>
+                    <h2>Matches of 2018</h2>
                     <main>
                         <table className="matches-table">
                                 <thead>
-                                        <th>Details</th>
+                                    <tr>
                                         <th>Date</th>
                                         <th>Home</th>
                                         <th>Away</th>
                                         <th>Score</th>
+                                        <th>Details</th>
+                                    </tr>
                                 </thead>
                             <tbody>
                                 {matchArray}
