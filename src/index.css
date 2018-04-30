@@ -19,22 +19,24 @@ button {
 }
 
 /* unvisited link */
-a {
+a:link {
   color: navy;
 }
 
-/* visited link
+/* visited link */
 a:visited {
-  color: green;
-} */
+  color: purple;
+}
 
 /* mouse over link */
 a:hover {
   color: red;
+  text-decoration: underline;
 }
 
 /* selected link */
 a:active {
   color: black;
+  text-decoration: underline;
 }
 

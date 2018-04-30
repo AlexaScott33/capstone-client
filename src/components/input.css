@@ -5,10 +5,17 @@ input {
     padding: 5px;
 }
 
+.form-error {
+  color: #e62739;
+}
+
+.error-symbol {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+}
+
 ::-webkit-input-placeholder { 
     font-style: italic;
   }
 
-  ::-webkit-input-validators { 
-    color: red;
-  }

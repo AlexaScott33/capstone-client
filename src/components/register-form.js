@@ -74,8 +74,6 @@ export class RegisterForm extends React.Component {
     }
 }
 
-
-
 export default reduxForm({
     form: 'registration'
 })(RegisterForm);

@@ -10,7 +10,6 @@ import './homepage.css';
 
 
 export default function HomePage() {
-    
         return (
             <Router>
                 <div>
@@ -20,7 +19,7 @@ export default function HomePage() {
                                 <h4>WPL Rugby Commentators</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum urna eget diam iaculis, dictum consequat orci consectetur. Proin commodo quis nibh eu aliquet. Donec vel justo tempor, iaculis dui in, molestie felis. Suspendisse varius ultricies nisi, a placerat sapien efficitur sit amet. Aenean placerat metus consequat eros tincidunt blandit. Integer non eros est. Nam posuere mattis sagittis. Curabitur consequat massa urna, id varius justo lobortis porta.</p>
                             </div>
-                        </Popup>
+                    </Popup>
                         <a href="https://github.com/AlexaScott33/capstone-client" rel="noopener noreferrer" target="_blank" className="linkStyle">
                             <img className="github-logo" src="https://imgur.com/vzk8iT1.png" alt="GitHub Logo"></img>
                             <div className="github">GitHub</div>                
@@ -31,9 +30,9 @@ export default function HomePage() {
                     </header>
                     <Switch>
                         <Redirect exact from="/" to="/signup" />
-                        <Route exact path="/home" component={Matches}/>
-                        <Route exact path="/signup" component={Signup}/> 
-                        <Route exact path="/login" component={LoginForm}/> 
+                        <Route exact path="/home" component={Matches} />
+                        <Route exact path="/signup" component={Signup} /> 
+                        <Route exact path="/login" component={LoginForm} /> 
                         <Route path="/match/:id" component={Match}/> 
                     </Switch>
                 </div>

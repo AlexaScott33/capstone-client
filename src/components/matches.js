@@ -24,9 +24,7 @@ export class Matches extends React.Component {
         return (
             <div>
                 <Header />
-                <main>
                     <h2>Matches of 2018</h2>
-                    <main>
                         <table className="matches-table">
                                 <thead>
                                     <tr>
@@ -41,8 +39,6 @@ export class Matches extends React.Component {
                                 {matchArray}
                             </tbody>
                         </table>
-                    </main>
-                </main>
             </div>
         );
     }

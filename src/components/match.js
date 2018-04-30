@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Header from './header';
 import CommentForm from './comment-form';
 import { fetchMatch } from '../actions/match';
 // import PredictionForm from './prediction-form';
@@ -19,6 +20,7 @@ export class Match extends React.Component {
         const matchScore = this.props.matchObj.score;
         return (
             <div>
+                <Header />
                 <section className="home-link">
                     <Link to="/home">Home</Link> <br />
                 </section>
