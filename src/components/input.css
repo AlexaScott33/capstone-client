@@ -8,3 +8,7 @@ input {
 ::-webkit-input-placeholder { 
     font-style: italic;
   }
+
+  ::-webkit-input-validators { 
+    color: red;
+  }

@@ -1,3 +1,22 @@
+nav {
+    position: fixed;
+}
+
 h1 {
     color: #3a4660;
+    text-align: center;
+}
+
+.github-logo {
+    width: 50px;
+    height: 40px;
+    margin-top: 5px;
+    float: left;
+}
+
+.landing-page-logo {
+    width: 50px;
+    height: 40px;
+    margin-top: 5px;
+    float: left;
 }

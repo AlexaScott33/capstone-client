@@ -15,11 +15,11 @@ export class Header extends React.Component {
     render() {
         return (
             <div>
-                <nav>
+                
                     <Link to="/signup">
                         <button onClick={() => this.logOut()}>Log out</button>
                     </Link>    
-                </nav>
+                
             </div>
         )
     }
