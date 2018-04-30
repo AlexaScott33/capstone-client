@@ -1,8 +1,41 @@
+/* * {
+    text-align: center;
+} */
+
+h2 {
+    color: #608074;
+    text-align: center;
+}
+
+.matches-table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.matches-table td, .matches-table th {
+    border: 1px solid #3a4660;
+}
+
 thead {
-    font-size: 4em;
+    font-size: 25px;
+    background-color: #608074;
+    color: #3a4660;
+    padding: 20px;
 }
 
 td {
-    padding: 4em;
-    margin: 25em;
+    padding: 25px;
+    margin: 25px;
+}
+
+.matches-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.matches-table tr:nth-child(odd) {
+    background-color: #f1f0ee;
+}
+
+.matches-table tr:hover {
+    background-color: #ddd;
 }

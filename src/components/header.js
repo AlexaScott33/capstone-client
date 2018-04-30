@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import {clearAuth} from '../actions/auth';
 import {clearAuthToken} from '../local-storage';
 
+import './header.css';
 
 export class Header extends React.Component {
     logOut() {
@@ -14,12 +15,10 @@ export class Header extends React.Component {
 
     render() {
         return (
-            <div>
-                
-                    <Link to="/signup">
-                        <button onClick={() => this.logOut()}>Log out</button>
-                    </Link>    
-                
+            <div className="logout-container">
+                <Link to="/signup">
+                    <button className="logout-button" onClick={() => this.logOut()}>Log out</button>
+                </Link> 
             </div>
         )
     }

@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchMatches } from '../actions/matches';
 
+import './matches.css';
+
 export class Matches extends React.Component {
     componentDidMount() {
         this.props.dispatch(fetchMatches());
@@ -23,21 +25,21 @@ export class Matches extends React.Component {
             <div>
                 <Header />
                 <main>
-                    <h3>Matches/Schedule</h3>
-                        <table>
+                    <h2>Matches</h2>
+                    <main>
+                        <table className="matches-table">
                                 <thead>
-                                    <tr>
                                         <th>Details</th>
                                         <th>Date</th>
                                         <th>Home</th>
                                         <th>Away</th>
                                         <th>Score</th>
-                                    </tr>
                                 </thead>
                             <tbody>
                                 {matchArray}
                             </tbody>
                         </table>
+                    </main>
                 </main>
             </div>
         );

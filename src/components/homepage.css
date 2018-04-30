@@ -34,6 +34,17 @@ h1 {
     float: left;
 }
 
+div.github {
+    display: none;
+}
+
+a.linkStyle:hover div.github {
+    display: block;
+    margin-left: 2px;
+    text-align: justify;
+    color: black;
+}
+
 .landing-page-logo {
     width: 50px;
     height: 40px;
