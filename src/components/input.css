@@ -7,6 +7,7 @@ input {
 
 .form-error {
   color: #e62739;
+  font-size: 15px;
 }
 
 .error-symbol {
