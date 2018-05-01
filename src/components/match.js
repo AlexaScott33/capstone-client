@@ -22,7 +22,7 @@ export class Match extends React.Component {
             <div>
                 <Header />
                 <section className="home-link">
-                    <Link to="/home">Home</Link>
+                    <Link to="/home">Back</Link>
                 </section>
                 <main>
                     <table className="single-match-table">
