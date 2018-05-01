@@ -27,7 +27,6 @@ export class RegisterForm extends React.Component {
                         this.props.dispatch(registerUser(values))
                                     .then(this.setState({ msg: 'Thank you for signing up! Please login.' }))}
                             )}>
-                    {/* <img className="register-logo" src="https://imgur.com/gha3CFr.png" alt="New User Logo"></img>                    */}
                     <h3>Register New User</h3> 
                     <label htmlFor="firstname">First Name</label>
                     <Field 

@@ -21,10 +21,10 @@ export class Match extends React.Component {
         return (
             <div>
                 <Header />
-                <section className="home-link">
+                <section role="region" className="home-link">
                     <Link to="/home">Back</Link>
                 </section>
-                <main>
+                <main role="main">
                     <table className="single-match-table">
                         <thead>
                             <tr>

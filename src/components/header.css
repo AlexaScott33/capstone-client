@@ -4,16 +4,12 @@
 
 .logout-button {
     position: relative;
-    right: 2px;
     border: 1px solid gray;
     border-radius: 5px;
     margin: auto;
     padding: 10px;
     color: white;
     background:#3B4371;
-    /* color: white;
-    background:#008CBA;
-   */
 }
 
 

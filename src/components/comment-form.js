@@ -17,7 +17,7 @@ export class CommentForm extends React.Component {
         ))
         return (
             <div className="comment-box-container">
-                <h3>See what people said about the match</h3>
+                <h3>See what people are saying about the match:</h3>
                 <ul className="comment-box">
                     {commentList}
                 </ul>

@@ -11,10 +11,11 @@ export class LoginForm extends React.Component {
     render() {
         return (
             <div className="login-container">
-                <form className="login-form" name="login"
-                onSubmit={this.props.handleSubmit(values => this.props.dispatch(login(values.username, values.password))
-                                                                    .then(()=>this.props.history.push('/home')))}
-                >
+                <form 
+                    className="login-form" 
+                    name="login"
+                    onSubmit={this.props.handleSubmit(values => this.props.dispatch(login(values.username, values.password))
+                                                                    .then(()=>this.props.history.push('/home')))}>
                     <h3>Existing Users Login</h3>
                     <label htmlFor="username">Username</label>
                     <Field

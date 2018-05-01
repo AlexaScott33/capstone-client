@@ -3,10 +3,6 @@
     margin-left: 5px;
 }
 
-/* .match-container {
-    display: inline-block;
-} */
-
 .single-match-table {
     border-collapse: collapse;
     margin: auto;
@@ -21,8 +17,6 @@
     font-size: 25px;
     background-color: #3a4660;
     color: #e1e8f0;
-    /* background-color: #608074;
-    color: #3a4660; */
     padding: 20px;
 }
 

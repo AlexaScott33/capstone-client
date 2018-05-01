@@ -11,7 +11,7 @@ export default function HomePage() {
         return (
             <Router>
                 <div>
-                    <header>
+                    <header role="banner">
                         <h1>WPL Rugby Commentators</h1>
                     </header>
                     <main role="main" className="main">
