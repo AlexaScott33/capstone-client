@@ -13,10 +13,12 @@ export default function SignUp() {
                 <Link to="/login">Already have an account? Click to Login</Link> <br />
             </div>
             <div className="popup-link">
-            <Popup trigger={<button className="popup-button"> What?</button>} position="right center">
+            <Popup trigger={<button className="popup-button"> What?</button>} position="top center">
                     <div className="popup-box">
                         <h4>WPL Rugby Commentators</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum urna eget diam iaculis, dictum consequat orci consectetur. Proin commodo quis nibh eu aliquet. Donec vel justo tempor, iaculis dui in, molestie felis. Suspendisse varius ultricies nisi, a placerat sapien efficitur sit amet. Aenean placerat metus consequat eros tincidunt blandit. Integer non eros est. Nam posuere mattis sagittis. Curabitur consequat massa urna, id varius justo lobortis porta.</p>
+                        <p>This is an app that allows you to stay up to date with the most recent games played during the Women's Premier League Rugby Season.</p> 
+                        <p>If you are a new user, please register. If you're an existing user, please log in and welcome back!</p>
+                        <p></p>
                     </div>
             </Popup>
                 <a href="https://github.com/AlexaScott33/capstone-client" rel="noopener noreferrer" target="_blank" className="linkStyle">
