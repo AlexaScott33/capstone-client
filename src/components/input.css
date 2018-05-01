@@ -4,6 +4,7 @@ input {
     margin: 2px;
     padding: 5px;
     width: 98%;
+    direction: ltr;
 }
 
 .form-error {
@@ -19,5 +20,7 @@ input {
 
 ::-webkit-input-placeholder { 
     font-style: italic;
-  }
+}
+
+
 

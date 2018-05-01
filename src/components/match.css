@@ -1,8 +1,5 @@
 .home-link {
-    text-align: left;
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 10px;
+    float: left;
 }
 
 /* .match-container {
@@ -12,7 +9,7 @@
 .single-match-table {
     border-collapse: collapse;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .single-match-table td, .matches-table th {

@@ -16,7 +16,6 @@ export default function HomePage() {
                     <header>
                         <h1>WPL Rugby Commentators</h1>
                     </header>
-                    <main role="main" className="main">
                     <div className="popup-link">
                     <Popup trigger={<button className="popup-button"> What?</button>} position="right center">
                             <div className="popup-box">
@@ -29,6 +28,7 @@ export default function HomePage() {
                             <div className="github">GitHub</div>                
                         </a>
                     </div>
+                    <main role="main" className="main">
                     <Switch>
                         <Redirect exact from="/" to="/signup" />
                         <Route exact path="/home" component={Matches} />

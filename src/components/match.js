@@ -19,37 +19,39 @@ export class Match extends React.Component {
         const matchAwayTeam = this.props.matchObj.away;
         const matchScore = this.props.matchObj.score;
         return (
-            <div className="match-container">
+            <div>
                 <Header />
                 <section className="home-link">
-                    <Link to="/home">Home</Link> <br />
+                    <Link to="/home">Home</Link>
                 </section>
-                <table className="single-match-table">
-                    <thead>
-                        <tr>
-                            <th colSpan="2">Single Match Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Date</td>
-                            <td>{matchDate}</td>
-                        </tr>
-                        <tr>
-                            <td>Home Team</td>
-                            <td>{matchHomeTeam}</td>
-                        </tr>
-                        <tr>
-                            <td>Away Team</td>
-                            <td>{matchAwayTeam}</td>
-                        </tr>
-                        <tr>
-                            <td>Final Score</td>
-                            <td>{matchScore}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <main>
+                    <table className="single-match-table">
+                        <thead>
+                            <tr>
+                                <th colSpan="2">Single Match Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Date</td>
+                                <td>{matchDate}</td>
+                            </tr>
+                            <tr>
+                                <td>Home Team</td>
+                                <td>{matchHomeTeam}</td>
+                            </tr>
+                            <tr>
+                                <td>Away Team</td>
+                                <td>{matchAwayTeam}</td>
+                            </tr>
+                            <tr>
+                                <td>Final Score</td>
+                                <td>{matchScore}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 <CommentForm id={this.props.match.params.id} />
+                </main>
                 {/* <PredictionForm /> */}
             </div>
         )
