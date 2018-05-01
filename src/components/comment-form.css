@@ -28,7 +28,10 @@ li {
 
 textarea {
     overflow-y: scroll;
-    margin-top: 5px;
+    margin-top: 15px;
+    width: 300px;
+    height: 70px;
+    resize: none;
 }
 
   #comment-button {
@@ -37,6 +40,6 @@ textarea {
     color:rgb(77, 71, 71);
     background:lightgray;
     margin-left: 5px;
-    width: 80px;
+    width: 100px;
     height: 25px;
 }

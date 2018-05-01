@@ -4,58 +4,8 @@
     }
 }
 
-.popup-link {
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-}
-
-.popup-button {
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
-    color: white;
-    background:#3B4371;
-    width: 50px;
-    height: 40px;
-}
-
-.popup-box {
-    background: #f5f5f5;
-}
-
-/* h4 {
-
-} */
-
 h1 {
     color: #3a4660;
     text-align: center;
 }
 
-.github-logo {
-    width: 50px;
-    height: 40px;
-    margin-top: 5px;
-    margin-left: 2px;
-    float: left;
-}
-
-div.github {
-    display: none;
-}
-
-a.linkStyle:hover div.github {
-    display: block;
-    margin-left: 2px;
-    text-align: justify;
-    color: black;
-}
-
-.landing-page-logo {
-    width: 50px;
-    height: 40px;
-    margin-top: 5px;
-    float: left;
-}

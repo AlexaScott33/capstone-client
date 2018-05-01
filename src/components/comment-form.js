@@ -32,7 +32,7 @@ export class CommentForm extends React.Component {
                         placeholder="Leave a comment..."
                         onFocus={(e) => e.target.placeholder = ""}
                         onBlur={(e) => e.target.placeholder ="Leave a comment..."}>
-                    </textarea>
+                    </textarea> <br />
                     <button type="submit" id="comment-button">comment</button>
                 </form>
             </div>
