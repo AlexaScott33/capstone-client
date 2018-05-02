@@ -18,7 +18,7 @@ export default function SignUp() {
                         <h4>WPL Rugby Commentators</h4>
                         <p>This is an app that allows you to stay up to date with the most recent games played during the Women's Premier League Rugby Season.</p> 
                         <p>If you are a new user, please register. If you're an existing user, please log in and welcome back!</p>
-                        <p></p>
+                        <p>Insert more text...</p>
                     </div>
             </Popup>
                 <a href="https://github.com/AlexaScott33/capstone-client" rel="noopener noreferrer" target="_blank" className="linkStyle">

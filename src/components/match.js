@@ -21,7 +21,7 @@ export class Match extends React.Component {
         return (
             <div>
                 <Header />
-                <section role="region" className="home-link">
+                <section className="home-link">
                     <Link to="/home">Back</Link>
                 </section>
                 <main role="main">
