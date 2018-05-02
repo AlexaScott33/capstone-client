@@ -11,13 +11,22 @@ h3 {
     text-align: center;
 }
 
+
 .comment-box {
     border: 1px solid #3a4660;
     border-radius: 10px;
     border-top-left-radius: 0px;
     background-image: linear-gradient(120deg, #4ABDAC 0%, #FC4A1A 100%);
-    width: 300px;
-    margin: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 25;
+}
+
+@media screen and (min-width: 922px) {
+    .comment-box {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 }
 
 li {
