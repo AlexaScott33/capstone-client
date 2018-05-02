@@ -10,7 +10,7 @@ describe('<HomePage />', () => {
     it('Renders the header', () => {
         const title = 'WPL Rugby Commentators';
         const wrapper = shallow(<HomePage />);
-        expect(wrapper.contains(<h1>{title}</h1>)).toEqual(true);
+        expect(wrapper.contains(<header role="banner"><h1>{title}</h1></header>)).toEqual(true);
     });
 
     
