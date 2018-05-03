@@ -5,7 +5,7 @@ An application designed for Thinkful's Engineering Emmersion full-stack capstone
 ## View the Project live here:
 https://relaxed-khorana-fd5887.netlify.com/signup
 
-## View the backend code here:
+## View the Backend code here:
 https://github.com/AlexaScott33/capstone-server
 
 ## Project Summary

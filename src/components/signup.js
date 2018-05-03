@@ -17,8 +17,8 @@ export default function SignUp() {
                     <div className="popup-box">
                         <h4>WPL Rugby Commentators</h4>
                         <p>This is an app that allows you to stay up to date with the most recent games played during the Women's Premier League Rugby Season.</p> 
-                        <p>If you are a new user, please register. If you're an existing user, please log in and welcome back!</p>
-                        <p>Insert more text...</p>
+                        <p>If you are a new user, please register. If you are an existing user, please log in and welcome back!</p>
+                        <p>Once logged in, you can view all of the matches and specific details about the match. Check out the comments section and make sure to post some comments yourself!</p>
                     </div>
             </Popup>
                 <a href="https://github.com/AlexaScott33/capstone-client" rel="noopener noreferrer" target="_blank" className="linkStyle">
