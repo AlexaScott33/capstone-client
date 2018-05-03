@@ -12,9 +12,7 @@ describe('<Header />', () => {
 
     });
 
-    it('Should direct you to /signup when the button is clicked', () => {
-
-    });
+    
 
 
 
