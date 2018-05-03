@@ -8,6 +8,14 @@ describe('<Header />', () => {
         shallow(<Header />);
     });
 
+    it('Should fire the logOut callback when the button is clicked', () => {
+
+    });
+
+    it('Should direct you to /signup when the button is clicked', () => {
+
+    });
+
 
 
 });
