@@ -38,7 +38,6 @@ export default function commentsReducer(state=initialState, action) {
         });
     }
     else if (action.type === ADD_COMMENT_SUCCESS) {
-        console.log('this is the action:', action);
         return Object.assign({}, state, {
             comments: action.comments,
             loading: false,

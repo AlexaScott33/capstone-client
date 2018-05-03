@@ -60,7 +60,6 @@ export const ADD_COMMENT = 'ADD_COMMENT';
 export const addComment = (values, id) => (dispatch, getState) => {
     const authToken = loadAuthToken() || getState().authReducer.authToken;
     dispatch(addCommentRequest())
-    console.log('STRINGIFIED VALUES:', JSON.stringify(values));
     const newItem = { content: values };
     return fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
         method: 'POST', 
