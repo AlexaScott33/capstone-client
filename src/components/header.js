@@ -10,7 +10,6 @@ export class Header extends React.Component {
     logOut() {
         this.props.dispatch(clearAuth());
         clearAuthToken();
-        console.log('Logging out user');
     }
 
     render() {

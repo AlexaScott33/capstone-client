@@ -24,7 +24,6 @@ export const fetchMatch = (id) => (dispatch, getState) => {
     return fetch(`${API_BASE_URL}/api/matches/${id}`, {
         method: 'GET',
         headers: {
-            // Provide our auth token as credentials
             Authorization: `Bearer ${authToken}`
         }
     })

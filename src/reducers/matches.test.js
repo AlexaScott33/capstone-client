@@ -1,5 +1,5 @@
 import matchesReducer from './matches';
-// 
+
 
 describe('matchesReducer', () => {
     it('Should set the initial state when nothing is passed in', () => {

@@ -14,8 +14,4 @@ describe('<LoginForm />', () => {
         const wrapper = shallow(<LoginForm handleSubmit={() => {}} />);
         expect(wrapper.contains(<h3>{header}</h3>)).toEqual(true);
     });
-
-    it('Dispatches login from login when form is submitted', () => {
-
-    });
 });

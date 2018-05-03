@@ -7,13 +7,4 @@ describe('<Header />', () => {
     it('Should render without crashing', () => {
         shallow(<Header />);
     });
-
-    it('Should fire the logOut callback when the button is clicked', () => {
-
-    });
-
-    
-
-
-
 });

@@ -23,7 +23,6 @@ export const fetchComment = (id) => (dispatch, getState) => {
     dispatch(fetchCommentRequest());
     return fetch(`${API_BASE_URL}/api/matches/${id}/comments`, {
         headers: {
-            // Provide our auth token as credentials
             Authorization: `Bearer ${authToken}`
         }
     })

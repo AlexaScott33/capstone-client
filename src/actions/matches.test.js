@@ -35,7 +35,7 @@ describe('fetchMatchesSuccess', () => {
 });
 
 // describe('fetchMatches', () => {
-//     it('Should dispatch fetchMatchesSuccess', () => {
+//     it('Should dispatch fetchMatches', () => {
 //         const matches = [
 //             {
 //                 "id": "000000000000000000000000",
