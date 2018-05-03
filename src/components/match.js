@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Header from './header';
 import CommentForm from './comment-form';
 import { fetchMatch } from '../actions/match';
-// import PredictionForm from './prediction-form';
 
 import './match.css';
 
@@ -52,7 +51,6 @@ export class Match extends React.Component {
                     </table>
                 <CommentForm id={this.props.match.params.id} />
                 </main>
-                {/* <PredictionForm /> */}
             </div>
         )
     }
