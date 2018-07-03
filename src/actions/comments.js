@@ -72,7 +72,10 @@ export const addComment = (values, id) => (dispatch, getState) => {
     })
     .then(res => {
         if (!res.ok) {
-            return Promise.reject(res.statusText);
+            return res.json()
+            .then(err => {
+                return Promise.reject(err);
+            });
         }
         return res.json();
     })

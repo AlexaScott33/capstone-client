@@ -10,6 +10,13 @@ export class CommentForm extends React.Component {
     }
 
     render() {
+        let errorMessage;
+        console.log(errorMessage);
+        if(this.props.error !==null) {
+            errorMessage = this.props.error.message;
+            console.log(errorMessage);
+        }
+
         const commentList = this.props.comments.map((comment, index) => (
             <li key={index}>
                 <strong>{comment.userId.username}:</strong> <i>"{comment.content}"</i>
@@ -21,6 +28,7 @@ export class CommentForm extends React.Component {
                 <ul className="comment-box">
                     {commentList}
                 </ul>
+                <p className="error-message">{errorMessage}</p>
             <form className="comment-box-form" onSubmit={(e) => {
                 e.preventDefault();
                 const userInput = e.target.commentInput.value;
@@ -41,7 +49,8 @@ export class CommentForm extends React.Component {
 }
 
 const mapStateToProps = (state, props) => ({
-    comments: state.commentsReducer.comments
+    comments: state.commentsReducer.comments,
+    error: state.commentsReducer.error
 });
 
 export default connect(mapStateToProps)(CommentForm);

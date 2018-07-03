@@ -8,6 +8,15 @@
     left: 15px;
 }
 
+@media screen and (min-width: 320px) {
+    .popup-link {
+        margin-top: 1rem;
+        position: relative;
+        margin-left: 6rem;
+    }
+}
+
+
 .popup-button {
     border: 1px solid gray;
     border-radius: 5px;

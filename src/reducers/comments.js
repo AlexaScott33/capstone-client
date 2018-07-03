@@ -29,7 +29,7 @@ export default function commentsReducer(state=initialState, action) {
     else if (action.type === FETCH_COMMENT_ERROR) {
         return Object.assign({}, state, {
             loading: false,
-            error: action.error
+            error: action.error.message
         });
     }
     else if (action.type === ADD_COMMENT_REQUEST) {
