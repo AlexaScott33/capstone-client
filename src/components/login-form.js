@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Field, reduxForm, focus } from 'redux-form';
 import Input from './input';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,6 @@ import { login } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 
 import './login-form.css';
-
 
 
 export class LoginForm extends React.Component {
@@ -42,6 +42,14 @@ export class LoginForm extends React.Component {
         )
     }
 }
+
+// const mapStateToProps = (state, props) => ({
+//     comments: state.commentsReducer.comments,
+//     error: state.commentsReducer.error
+// });
+
+
+// export default connect(mapStateToProps)(LoginForm);
 
 export default withRouter(reduxForm({
     form: 'login',

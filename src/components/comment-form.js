@@ -11,10 +11,8 @@ export class CommentForm extends React.Component {
 
     render() {
         let errorMessage;
-        console.log(errorMessage);
         if(this.props.error !==null) {
             errorMessage = this.props.error.message;
-            console.log(errorMessage);
         }
 
         const commentList = this.props.comments.map((comment, index) => (
