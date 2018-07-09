@@ -15,7 +15,7 @@ export class Header extends React.Component {
     render() {
         return (
             <div className="logout-container">
-                <Link to="/signup">
+                <Link to="/landing">
                     <button className="logout-button" onClick={() => this.logOut()}>Log out</button>
                 </Link> 
             </div>

@@ -1,21 +1,16 @@
-@media screen and (max-width: 992px) {
-    .main {
-        padding-bottom: 60px;
-    }
-}
-
 /* h1 {
     color: #3a4660;
     text-align: center;
     margin: 0;
     padding: 1rem 0;
-}
+} */
 
 .header-landing {
-    color: #3a4660;
+    color: darkblue;
     text-align: center;
     margin: 0;
-    padding: 9rem 0;
+    padding: 19rem 0;
+    opacity: 1.65;
 }
 
 .background {
@@ -24,5 +19,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-} */
+}
 
+.description-container {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #89a4c7;
+}
+
+.description-header {
+    margin: 0 0;
+}
+
+.link {
+    text-decoration: none;
+}
