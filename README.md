@@ -36,9 +36,6 @@ https://github.com/AlexaScott33/capstone-server
 
 ## Screenshots
 
-Landing Page
-<img width="641" alt="screen shot 2018-07-10 at 4 00 12 pm" src="https://user-images.githubusercontent.com/35544816/42542237-d07893c8-845a-11e8-8ee1-f5ca1fa7cc51.png">
-
 About Page
 <img width="1273" alt="screen shot 2018-07-10 at 4 00 25 pm" src="https://user-images.githubusercontent.com/35544816/42542253-e81c8660-845a-11e8-886c-436d8f766c64.png">
 
