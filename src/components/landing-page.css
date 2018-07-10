@@ -93,28 +93,28 @@
 
 @media only screen and (min-width: 1024px) {
     .landing-button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #link {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .header-landing {
-        font-size: 4rem;
-        margin-top: 22rem;
+        font-size: 3rem;
+        margin-top: 15rem;
     }
 
     .description-header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .description-p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .close-button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
