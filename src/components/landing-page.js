@@ -25,7 +25,6 @@ export default class LandingPage extends React.Component {
         });
     }
     render() {
-        console.log(this.state.toggle);
         if(this.state.toggle === 'landing') {
             return (
                 <div>

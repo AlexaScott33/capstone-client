@@ -36,15 +36,21 @@ https://github.com/AlexaScott33/capstone-server
 
 ## Screenshots
 
+Landing Page
+<img width="641" alt="screen shot 2018-07-10 at 4 00 12 pm" src="https://user-images.githubusercontent.com/35544816/42542237-d07893c8-845a-11e8-8ee1-f5ca1fa7cc51.png">
+
+About Page
+<img width="1273" alt="screen shot 2018-07-10 at 4 00 25 pm" src="https://user-images.githubusercontent.com/35544816/42542253-e81c8660-845a-11e8-886c-436d8f766c64.png">
+
 Registration Page
-<img width="1262" alt="Register New User Page" src="https://user-images.githubusercontent.com/35544816/39558248-d28e88ec-4e41-11e8-9e9a-83e3ff0fdd0f.png">
+<img width="1266" alt="screen shot 2018-07-10 at 4 00 45 pm" src="https://user-images.githubusercontent.com/35544816/42542259-f4dec43a-845a-11e8-87c9-1a402629c09b.png">
 
 Login Page
 ![screen shot 2018-05-02 at 8 00 17 pm](https://user-images.githubusercontent.com/35544816/39558447-8bf04054-4e43-11e8-9969-0ac7593694a1.png)
 
 Schedule/Home Page
-![screen shot 2018-05-02 at 7 55 01 pm](https://user-images.githubusercontent.com/35544816/39558357-c8edc19e-4e42-11e8-9c97-46052a54c30a.png)
+![screen shot 2018-07-10 at 4 01 22 pm](https://user-images.githubusercontent.com/35544816/42542277-05d538b4-845b-11e8-9a53-10b447657de8.png)
 
 Single Match Details Page with Comment Section
-![screen shot 2018-05-02 at 7 56 26 pm](https://user-images.githubusercontent.com/35544816/39558379-f54553ec-4e42-11e8-8ccd-531ccaa04c0f.png)
+![screen shot 2018-07-10 at 4 01 56 pm](https://user-images.githubusercontent.com/35544816/42542285-1162c340-845b-11e8-8e6b-6a87df54b034.png)
 
