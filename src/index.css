@@ -41,3 +41,8 @@ a:active {
   text-decoration: underline;
 }
 
+.heading {
+  text-align: center;
+  color: #3B4371;
+}
+

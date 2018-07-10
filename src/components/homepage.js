@@ -12,9 +12,6 @@ export default function HomePage() {
         return (
             <Router>
                 <div>
-                    {/* <header role="banner" className="background">
-                        <h1 className="header-landing">WPL Rugby Commentators</h1>
-                    </header> */}
                     <main role="main" className="main">
                     <Switch>
                         <Redirect exact from="/" to="/landing" />

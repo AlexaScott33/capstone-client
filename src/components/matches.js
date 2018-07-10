@@ -23,7 +23,8 @@ export class Matches extends React.Component {
         ));
         return (
             <div>
-            <Header />
+                <h1 className="heading">WPL Rugby Commentators</h1>
+                <Header />
                     <h2>Matches of 2018</h2>
                     <div className="table-responsive">
                         <table className="matches-table">

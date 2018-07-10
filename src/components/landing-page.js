@@ -50,18 +50,20 @@ export default class LandingPage extends React.Component {
         if(this.state.toggle === 'what?') {
             return (
                 <div>
-                    <header role="banner" className="toggle-background">
                     <div className="description-container">
-                        <h4 className="description-header">Stay up to date with the most recent games played during the Women's Premier League Rugby Season with WPL Rugby Commentators.</h4>
-                        <p>Once logged in, you can view all of the matches and specific details about the match. Check out the comments section and make sure to post some comments yourself!</p>
+                        <h3 className="description-header">What is WPL Rugby Commentators?</h3>
+                        <div className="description-p">
+                            <p>WPL rugby has become increasingly popular over the last couple of years. Women from all over the United States compete in hopes to become WPL National Champions.</p>
+                            <p>With WPL Rugby Commentators, you can stay up to date with the most recent games played during the Women's Premier League Rugby Season.</p>
+                            <p>All you have to do is create an account and login to view all of the matches and specific details about each match. </p>
+                            <p>Be sure to check out the comments section and make sure to post some comments yourself!</p>
+                        </div>
                         <button
-                    onClick={() => this.handleClose()}
-                    >Close</button>
-                    </div>
-                    
-                       
-                    </header>
-                    
+                        className="close-button"
+                            onClick={() => this.handleClose()}>
+                            Close
+                        </button>
+                    </div>                     
                 </div>
             );
         }

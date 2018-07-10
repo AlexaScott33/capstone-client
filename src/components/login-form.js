@@ -12,6 +12,7 @@ export class LoginForm extends React.Component {
     render() {
         return (
             <div className="login-container">
+                <h1 className="heading">WPL Rugby Commentators</h1>
                 <form 
                     className="login-form" 
                     name="login"

@@ -19,6 +19,7 @@ export class RegisterForm extends React.Component {
     render() {
         return (
             <div className="container">
+                <h1 className="heading">WPL Rugby Commentators</h1>
                 {this.state.msg ? this.state.msg : ''}
                 <form 
                     className="register-form" 
