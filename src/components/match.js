@@ -19,7 +19,6 @@ export class Match extends React.Component {
         const matchScore = this.props.matchObj.score;
         return (
             <div>
-                <Header />
                 <section className="home-link">
                     <Link to="/home">Back</Link>
                 </section>

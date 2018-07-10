@@ -1,15 +1,32 @@
-.logout-container {
-    float: right;
+@media screen and (min-width: 320px) {
+    .logout-button {
+        position: relative;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-left: 11rem;
+        padding: 10px;
+        color: white;
+        background:#3B4371;
+    }
 }
 
-.logout-button {
-    position: relative;
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin: auto;
-    padding: 10px;
-    color: white;
-    background:#3B4371;
+@media screen and (min-width: 768px) {
+    .logout-button {
+        margin-left: 22.5rem;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .logout-button {
+        margin-left: 30.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logout-button {
+        margin-left: 43.5rem;
+    }
+}
+
 
 
