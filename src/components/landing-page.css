@@ -5,6 +5,11 @@
     padding: 1rem 0;
 } */
 
+.top-container {
+    padding: 1rem 0;
+    background-color: #3B4371;
+}
+
 .header-landing {
     color: darkblue;
     text-align: center;
@@ -13,10 +18,32 @@
     opacity: 1.65;
 }
 
+.landing-button {
+    margin: 0 1rem;
+    padding: .2rem 1rem;
+}
+
+.landing-links {
+    text-align: center;
+}
+
+#link {
+    padding: 0 1rem;
+    text-decoration: none;
+    float: right;
+    font-size: 1rem;
+    color: white;
+}
+
+#link:hover {
+    color: red;
+}
+
 .background {
-    opacity: 0.65;
+    height: 100vh;
+    /* opacity: 0.65; */
     background: url('https://imgur.com/G4esKqB.png');
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,6 +58,6 @@
     margin: 0 0;
 }
 
-.link {
-    text-decoration: none;
+.toggle-background {
+    background-color: black;
 }
